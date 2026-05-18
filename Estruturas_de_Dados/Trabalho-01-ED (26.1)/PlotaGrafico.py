@@ -20,6 +20,7 @@ def gerarGrafico(titulo, algoritmos, numeros, resultados):
     plt.title(titulo,fontsize=18)
     plt.legend()
     plt.grid(True)
+    plt.savefig(f"graficos/{titulo}.png", dpi=300, bbox_inches='tight')
     plt.show()
 
 def lendoResultados(arquivo):

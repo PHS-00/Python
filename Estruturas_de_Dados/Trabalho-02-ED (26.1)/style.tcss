@@ -1,0 +1,154 @@
+/* ════════════════════════════════════════════════════════
+   style.tcss  –  Estruturas de Dados TUI
+   ════════════════════════════════════════════════════════ */
+
+/* ── Header / Footer ── */
+Header {
+    background: $accent;
+    color: $background;
+    text-style: bold;
+}
+
+/* ── Backend bar ── */
+#backend-bar {
+    height: 5;
+    background: $panel;
+    border: tall $accent;
+    margin: 1 2;
+    padding: 0 1;
+    align: left middle;
+}
+
+#backend-left {
+    width: auto;
+    align: left middle;
+    padding-right: 2;
+}
+
+#backend-label {
+    width: auto;
+    padding: 0 1;
+    color: $text-muted;
+}
+
+#backend-bar Select {
+    width: 22;
+}
+
+#backend-desc {
+    width: 1fr;
+    color: $text-muted;
+    padding: 0 2;
+}
+
+/* ── Help bar (oculta por padrão, toggle com H) ── */
+#help-bar {
+    height: 3;
+    background: $boost;
+    border-bottom: tall $accent;
+    color: $text;
+    padding: 0 2;
+    align: left middle;
+}
+
+/* ── TabbedContent centralizado ── */
+TabbedContent {
+    align: center top;
+}
+
+TabbedContent > TabPane {
+    padding: 0 1;
+}
+
+/* ── Títulos de seção ── */
+.section-title {
+    color: $accent;
+    text-style: bold;
+    padding: 0 1;
+    margin-top: 1;
+}
+
+/* ── Controles (input + botões) – ficam no TOPO ── */
+.controls {
+    height: auto;
+    border: round $accent;
+    padding: 1;
+    margin: 0 0 1 0;
+}
+
+.controls Input {
+    margin: 0 0 1 0;
+}
+
+.btn-row {
+    height: auto;
+    layout: horizontal;
+    align: left middle;
+}
+
+.btn-row Button {
+    margin: 0 1 0 0;
+}
+
+/* ── Collapsible Big-O ── */
+Collapsible {
+    margin: 0 0 1 0;
+    border: round $primary-darken-2;
+}
+
+.bigo-text {
+    color: $text-muted;
+    padding: 0 2;
+}
+
+/* ── Layout principal das abas ── */
+.tab-layout {
+    height: 1fr;
+    padding: 0 0;
+}
+
+/* ── Caixa de visualização da estrutura ── */
+.struct-box {
+    width: 1fr;
+    height: 1fr;
+    border: round $primary;
+    padding: 1;
+    margin: 0 1 0 0;
+    min-width: 28;
+}
+
+.struct-empty {
+    color: $text-disabled;
+    padding: 0 2;
+    text-style: italic;
+}
+
+/* ── Log de ações ── */
+.log-box {
+    width: 1fr;
+    height: 1fr;
+    border: round $secondary;
+    padding: 1;
+    min-width: 30;
+}
+
+/* ── Fila: direção visual ── */
+.fila-direcao {
+    color: $text-muted;
+    text-style: italic;
+    padding: 0 1;
+    margin-bottom: 1;
+}
+
+/* ── SelectionList (Lista de tarefas) ── */
+SelectionList {
+    height: 1fr;
+    border: none;
+}
+
+/* ── Tree (Histórico web) ── */
+Tree {
+    height: 1fr;
+    border: none;
+    padding: 0;
+}
